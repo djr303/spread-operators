@@ -28,3 +28,11 @@ myFunction()
 //exmaple five
 const args = [1,2,3]
 mySecondFunction(...args)
+
+try {
+    const args2 = { "key1": 1,  "key2": 2,  "key3": 3 }
+    mySecondFunction(...args2)
+} catch (e) {
+    console.log('ERROR CAUGHT')
+    console.log(e)
+}
